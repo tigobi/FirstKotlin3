@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
             val name = binding.editTextName.text.toString().trim()
             binding.textViewName.text = "Привет, $name"
         }
+
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
